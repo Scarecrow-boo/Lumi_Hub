@@ -1,4 +1,4 @@
-local sup = {
+local dontcrack = {
     {
         IDs = {2788229376, 7213786345}, -- Da hood
         Script = "https://api.rubis.app/v2/scrap/vVCzHWdaam4S6tV2/raw"
@@ -6,13 +6,16 @@ local sup = {
     {
         IDs = {70845479499574}, -- Bite By Night
         Script = "https://api.rubis.app/v2/scrap/zQgxyPi1AURNXDyT/raw"
-    }
+    },
+    {
+        IDs = {9872472334}, -- Evade
+        Script = "https://raw.githubusercontent.com/Scarecrow-boo/Script.lol/refs/heads/main/EvadeV5"
 }
 
 local placeId = game.PlaceId
 local found = false
 
-for _, gameData in ipairs(sup) do
+for _, gameData in ipairs(dontcrack) do
     for _, id in ipairs(gameData.IDs) do
         if placeId == id then
             found = true
